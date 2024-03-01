@@ -12,15 +12,17 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#elem1 {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    padding: 1px;
-    background: #97FF97;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#elem2 {
+#block {
+    display: flex;
+}
+
+.element {
     width: 140px;
     height: 140px;
     margin: 30px;
@@ -28,14 +30,10 @@ body {
     background: #7777FF;
 }
 
-#elem3 {
-    width: 80px;
-    height: 80px;
-    margin: 30px;
-    padding: 1px;
-    background: #FF7D7D;
+.element.active {
+    background-color: red;
 }
 
-#block:not(.active) {
-    display: none;
+.element__link {
+    display: block;
 }
